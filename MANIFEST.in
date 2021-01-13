@@ -1,0 +1,5 @@
+graft indico_vc_ms_teams/static
+graft indico_vc_ms_teams/templates
+graft indico_vc_ms_teams/translations
+
+global-exclude *.pyc __pycache__ .keep

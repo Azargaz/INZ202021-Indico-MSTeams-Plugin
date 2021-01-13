@@ -1,0 +1,7 @@
+{% extends 'vc/management_buttons.html' %}
+{% from 'vc_ms_teams:buttons.html' import render_join_button, render_authorize_button  %}
+
+{% block buttons %}
+    {{ render_join_button(vc_room, extra_classes="icon-play") }}
+    {{ render_authorize_button(vc_room) }}
+{% endblock %}

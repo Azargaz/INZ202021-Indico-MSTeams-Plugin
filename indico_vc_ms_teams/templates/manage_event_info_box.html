@@ -1,0 +1,10 @@
+<dl class="details-container">
+    <dt>{% trans %}Join URL{% endtrans %}</dt>
+    <dd>
+        {% if vc_room.data.authorized %}
+            {{ vc_room.data.join_URL }}
+        {% else %}
+            {% trans %}Please authorize to get Microsoft Teams join URL{% endtrans %}
+        {% endif %}
+    </dd>
+</dl>

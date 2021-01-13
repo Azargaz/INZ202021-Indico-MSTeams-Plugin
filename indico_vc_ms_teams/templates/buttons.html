@@ -1,0 +1,15 @@
+{% macro render_authorize_button(vc_room, extra_classes="") %}
+    {% if not vc_room.data.authorized and vc_room.data.auth_URL %}
+        <a href="{{ vc_room.data.auth_URL }}" class="i-button highlight {{ extra_classes }}">
+            {% trans %}Authorize{% endtrans %}
+        </a>
+    {% endif %}
+{% endmacro %}
+
+{% macro render_join_button(vc_room, extra_classes="") %}
+    {% if vc_room.data.authorized and vc_room.data.join_URL %}
+        <a href="{{ vc_room.data.join_URL }}" class="i-button highlight {{ extra_classes }}" target="_blank">
+            {% trans %}Join{% endtrans %}
+        </a>
+    {% endif %}
+{% endmacro %}
