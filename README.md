@@ -16,7 +16,7 @@ To learn more about Indico plugins go here: https://docs.getindico.io/en/stable/
 
 3. Using the `client-id`, `client-secret` and `Redicrect URI` 
 modify the [`config.py`](https://github.com/Azargaz/INZ202021-Indico-MSTeams-Plugin/blob/main/indico_vc_ms_teams/config.py) 
-file (this step will be later removed - the plugin will be configured from the Indico interface instead).
+file (this step will be later removed - instead the plugin will be configured using the Indico plugin interface).
 
 4. Install the directory of plugin as Python package using `pip` inside the same `virtualenv` where your Indico instance is installed e.g. `pip install ./vc_ms_teams`.
 
